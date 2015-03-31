@@ -25,6 +25,7 @@ public class GuitarHero {
 	}
 	
 	public static int menu(Scanner kb) {
+		System.out.println();
 		System.out.println("1) Change Character");
 		System.out.println("2) Change Guitar");
 		System.out.println("3) Change Solo");
@@ -38,6 +39,7 @@ public class GuitarHero {
 			choice = kb.nextInt();
 		} while(choice < 1 || choice > 7);
 		kb.nextLine();
+		System.out.println();
 		
 		return choice;
 	}
